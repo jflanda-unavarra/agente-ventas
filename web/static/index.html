@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Agente de ventas</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header>
+    <h1>📊 Agente de ventas</h1>
+    <button id="reset" type="button">Nueva conversación</button>
+  </header>
+  <main id="messages" aria-live="polite">
+    <div class="hint">
+      Pregunta sobre las ventas. Ejemplos:
+      <button class="example" type="button">¿Cuál es el top 5 de tiendas por ventas totales?</button>
+      <button class="example" type="button">¿Cómo evolucionan las ventas por mes?</button>
+      <button class="example" type="button">¿Qué porcentaje de ventas es en promoción?</button>
+    </div>
+  </main>
+  <form id="form">
+    <textarea id="input" rows="1" placeholder="Escribe tu pregunta…" autofocus></textarea>
+    <button id="send" type="submit">Enviar</button>
+  </form>
+  <script src="/static/app.js"></script>
+</body>
+</html>

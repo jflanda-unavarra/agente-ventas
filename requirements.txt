@@ -1,3 +1,5 @@
 github-copilot-sdk==1.0.14
 pydantic==2.13.5
 python-dotenv==1.1.1
+fastapi==0.115.6
+uvicorn==0.34.0

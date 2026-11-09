@@ -89,4 +89,14 @@ desarrollo ya lo trae predescargado).
 La base SQLite se abre en modo de solo lectura y se devuelven como máximo 100
 filas por consulta.
 
-La versión con interfaz web vive en la rama `codex/web`.
+## Versión web
+
+Backend en Python (FastAPI, respuestas en streaming por SSE) y frontend en
+HTML + JavaScript vanilla, en `web/`. Reutiliza la herramienta y el prompt de
+`agente_ventas.py`.
+
+```sh
+python web/server.py
+```
+
+Abre <http://127.0.0.1:8000>. Cada pestaña mantiene su propia conversación.
